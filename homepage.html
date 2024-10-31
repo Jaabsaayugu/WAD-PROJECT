@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Search</title>
+    <script src="./js/homepage.js" defer></script>
+    <link rel="stylesheet" href="./css/homepage.css" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="logo-wrapper">
+        <span class="airline-name">Bolton Airlines</span>
+        <span class="airline-motto">We don't land we arrive. Látom</span>
+      </div>
+      <div class="nav-wrapper"></div>
+    </div>
+
+    <div class="main-container">
+      <div class="flight-finder">
+        <div class="flight-filters">
+          <button type="button" class="trip-rounds">one way</button>
+          <button type="button" class="trip-rounds">return</button>
+          <div class="traveler-number-wrapper">
+            <div class="traveler-number-dropdown">
+              <button
+                id="travelerBtn"
+                type="button"
+                class="travelers-button traveler-button-icon"
+              >
+                <div class="traveler-button-text">
+                  <span>Travelers</span>
+                  <span>1 traveler</span>
+                </div>
+              </button>
+            </div>
+            <div id="travelerDropdown" class="traveler-number-options">
+              <div class="traveler-options-input-wrapper">
+                <label for="adult-number">Adults</label>
+                <input
+                  type="number"
+                  name="adult-number"
+                  id="adult-number"
+                  hidden
+                />
+                <button class="increment-decrement-buttons">+</button>
+                <span>2</span>
+                <button class="increment-decrement-buttons">-</button>
+              </div>
+              <div class="traveler-options-input-wrapper">
+                <label for="child-number">Child</label>
+                <input
+                  type="number"
+                  name="child-number"
+                  id="child-number"
+                  hidden
+                />
+                <button class="increment-decrement-buttons">+</button>
+                <span>1</span>
+                <button class="increment-decrement-buttons">-</button>
+              </div>
+              <div class="traveler-options-input-wrapper">
+                <label for="infant-number">Infant</label>
+                <input
+                  type="number"
+                  name="infant-number"
+                  id="infant-number"
+                  hidden
+                />
+                <button class="increment-decrement-buttons">+</button>
+                <span>2</span>
+                <button class="increment-decrement-buttons">-</button>
+              </div>
+              <button type="submit" class="done-button">Done</button>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-wrapper">
+            <input
+              class="origin-destination origin-destination-icon"
+              type="text"
+              name="from-origin"
+              id="from-origin"
+              placeholder="Leaving from"
+              autofocus
+            />
+            <input
+              class="origin-destination origin-destination-icon"
+              type="text"
+              name="destination"
+              id="destination"
+              placeholder="Destination"
+            />
+            <button type="button" class="date-input-button date-input-icon">
+              Departure Date
+            </button>
+            <input
+              class="date-input"
+              type="date"
+              name="depart-date"
+              id="depart-date"
+              placeholder="Departing"
+              hidden
+            />
+            <input
+              class="date-input"
+              type="date"
+              name="return-date"
+              id="return-date"
+              placeholder="Returning"
+              hidden
+            />
+            <button type="submit" class="search-btn">Search</button>
+          </div>
+        </form>
+        <div class="flight-results-header">
+          <h3>Select your Flight</h3>
+          <div class="filters filter-icon">Filters</div>
+        </div>
+        <div class="flight-results-container">
+          <div class="flight-card">
+            <div class="flight-main">
+              <div class="flight-info">
+                <div class="flight-time">6:00pm - 8:05pm</div>
+                <div class="flight-route">Nairobi (NBO) - Tokyo (NRT)</div>
+                <div class="airline">✈ Ethiopian Airlines</div>
+              </div>
+              <div class="flight-price">
+                <div class="price">$1,642</div>
+                <span>ECONOMY</span>
+                <div class="price-note">Roundtrip per traveler</div>
+              </div>
+            </div>
+            <div class="flight-details">
+              <div class="duration">20h 5m (2 stops)</div>
+              <div class="stops">
+                2h 35m in Addis Ababa (ADD) • 1h 40m in Seoul (ICN)
+              </div>
+            </div>
+          </div>
+          <div class="flight-card">
+            <div class="flight-main">
+              <div class="flight-info">
+                <div class="flight-time">6:00pm - 8:05pm</div>
+                <div class="flight-route">Nairobi (NBO) - Tokyo (NRT)</div>
+                <div class="airline">✈ Ethiopian Airlines</div>
+              </div>
+              <div class="flight-price">
+                <div class="price">$1,642</div>
+                <span>ECONOMY</span>
+                <div class="price-note">Roundtrip per traveler</div>
+              </div>
+            </div>
+            <div class="flight-details">
+              <div class="duration">20h 5m (2 stops)</div>
+              <div class="stops">
+                2h 35m in Addis Ababa (ADD) • 1h 40m in Seoul (ICN)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-container">
+        <div class="company-wrapper">
+          <h4>Company</h4>
+          <a href="#">about</a>
+          <a href="#">partnerships</a>
+          <a href="#">advertisements</a>
+          <a href="#">jobs</a>
+        </div>
+        <div class="policies-wrapper">
+          <h4>Policies</h4>
+          <a href="#">terms and conditions</a>
+          <a href="#">terms of use</a>
+          <a href="#">privacy policies</a>
+          <a href="#">Legal information</a>
+          <a href="#">report</a>
+        </div>
+        <div class="help-wrapper">
+          <h4>Help</h4>
+          <a href="#">support</a>
+          <a href="#">cancel booked flight</a>
+          <a href="#">refund policies</a>
+          <a href="#">payment options</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

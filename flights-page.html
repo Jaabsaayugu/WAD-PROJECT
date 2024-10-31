@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Search results</title>
+    <link rel="stylesheet" href="./css/flights-page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">Bolton Airlines</div>
+        <nav class="nav-left"></nav>
+      </div>
+      <div class="header-right">
+        <a href="#" class="nav-link">Support</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="search-options">
+        <button class="option-btn">
+          Roundtrip <span class="arrow-down"></span>
+        </button>
+        <button class="option-btn">
+          1 traveler <span class="arrow-down"></span>
+        </button>
+        <button class="option-btn">
+          Economy <span class="arrow-down"></span>
+        </button>
+      </div>
+
+      <form class="search-form">
+        <div class="input-group">
+          <span class="search-icon"></span>
+          <input
+            type="text"
+            placeholder="Flying from"
+            value="Nairobi (NBO-Jomo Kenyat..."
+            class="search-input"
+          />
+        </div>
+        <div class="input-group">
+          <span class="search-icon"></span>
+          <input
+            type="text"
+            placeholder="Flying to"
+            value="Tokyo (NRT-Narita Intl.)"
+            class="search-input"
+          />
+        </div>
+        <div class="input-group">
+          <span class="calendar-icon"></span>
+          <input type="text" value="Oct 25" class="date-input" />
+        </div>
+        <div class="input-group">
+          <span class="calendar-icon"></span>
+          <input type="text" value="Nov 1" class="date-input" />
+        </div>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+
+      <div class="progress-steps">
+        <span class="step active">Choose departing flight</span>
+        <span class="arrow-right"></span>
+        <span class="step">Choose returning flight</span>
+        <span class="arrow-right"></span>
+        <span class="step">Review your trip</span>
+      </div>
+
+      <div class="date-grid" id="dateGrid"></div>
+
+      <div class="sort-section">
+        <p class="price-notice">
+          Prices may change based on availability and are not final until you
+          complete your purchase.
+        </p>
+        <div class="sort-container">
+          <label>Sort by</label>
+          <select class="sort-select">
+            <option>Recommended</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="flight-results">
+        <div class="results-header">
+          <h2>Recommended departing flights</h2>
+        </div>
+
+        <div class="flight-card">
+          <div class="flight-main">
+            <div class="flight-info">
+              <div class="flight-time">6:00pm - 8:05pm</div>
+              <div class="flight-route">Nairobi (NBO) - Tokyo (NRT)</div>
+              <div class="airline">✈ Ethiopian Airlines</div>
+            </div>
+            <div class="flight-price">
+              <div class="price-tag">1 left at</div>
+              <div class="price">$1,642</div>
+              <div class="price-note">Roundtrip per traveler</div>
+            </div>
+          </div>
+          <div class="flight-details">
+            <div class="duration">20h 5m (2 stops)</div>
+            <div class="stops">
+              2h 35m in Addis Ababa (ADD) • 1h 40m in Seoul (ICN)
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
