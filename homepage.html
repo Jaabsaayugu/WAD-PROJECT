@@ -18,9 +18,48 @@
 
     <div class="main-container">
       <div class="flight-finder">
+        <div class="nav-indicator">
+          <div id="step-1" class="nav-indicator-steps">
+            <span id="txt-step-1" class="step step-active"
+              >Choose departing flight</span
+            >
+            <img
+              class="arrow-right-icon"
+              src="./img-assets/icon-arrow-down.svg"
+              alt="arrow-icon"
+            />
+          </div>
+          <div id="step-2" class="nav-indicator-steps">
+            <span id="txt-step-2" class="step">Choose return flight</span>
+            <img
+              class="arrow-right-icon"
+              src="./img-assets/icon-arrow-down.svg"
+              alt="arrow-icon"
+            />
+          </div>
+          <div id="step-3" class="nav-indicator-steps">
+            <span id="txt-step-3" class="step">Review Trip</span>
+            <img
+              class="arrow-right-icon"
+              src="./img-assets/icon-arrow-down.svg"
+              alt="arrow-icon"
+            />
+          </div>
+          <div id="step-4" class="nav-indicator-steps">
+            <span id="txt-step-4" class="step">Make the payment</span>
+          </div>
+        </div>
         <div class="flight-filters">
-          <button type="button" class="trip-rounds">one way</button>
-          <button type="button" class="trip-rounds">return</button>
+          <button
+            id="one-way-btn"
+            type="button"
+            class="trip-rounds trip-rounds-active"
+          >
+            one way
+          </button>
+          <button id="return-btn" type="button" class="trip-rounds">
+            return
+          </button>
           <div class="traveler-number-wrapper">
             <div class="traveler-number-dropdown">
               <button
@@ -120,7 +159,7 @@
           <div class="filters filter-icon">Filters</div>
         </div>
         <div class="flight-results-container">
-          <div class="flight-card">
+          <div class="flight-card" flight-code="YDCFGD205">
             <div class="flight-main">
               <div class="flight-info">
                 <div class="flight-time">6:00pm - 8:05pm</div>
@@ -140,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="flight-card">
+          <div class="flight-card" flight-code="GHYDCV20">
             <div class="flight-main">
               <div class="flight-info">
                 <div class="flight-time">6:00pm - 8:05pm</div>

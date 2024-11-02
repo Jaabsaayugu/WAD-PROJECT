@@ -57,6 +57,34 @@ body {
     margin-inline: 3rem;
 }
 
+.nav-indicator {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+
+.nav-indicator-steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.step-active {
+    font-weight: bold;
+}
+
+.arrow-right-icon {
+    display: block;
+    height: 7px;
+    transform: rotate(-90deg);
+}
+
 .flight-filters {
     display: flex;
     flex-direction: row;
@@ -78,6 +106,12 @@ body {
         background-color: #4f4fff;
         border: #4f4fff;
     }
+}
+
+.trip-rounds-active {
+    color: #f9f9f9;
+    background-color: #4f4fff;
+    border: #4f4fff;
 }
 
 .traveler-number-wrapper {
@@ -273,6 +307,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #14141450;
+    padding: 0.5rem;
 }
 
 .filters {
@@ -322,6 +357,10 @@ body {
 
     &:hover {
         border: 2px solid #4f4fff;
+    }
+
+    &:active {
+        background-color: #4f4fff50;
     }
 }
 
